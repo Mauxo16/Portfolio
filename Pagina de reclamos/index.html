@@ -1,0 +1,130 @@
+<!doctype html>
+<!-- Autor: Mauro Santiago García Rodriguez, 307824 -->
+<html lang='es'>
+<head>
+	<meta charset='utf-8'>
+	<link rel='stylesheet' href='css/estilos.css'>
+	<title> Super Reclamos! </title>
+</head>
+<body>
+<header>
+ <div id='header'>
+ <!-- Encabezado -->
+ <nav id='nav_bar'>
+	<ul id='nav_list'>
+		<li> <img src='img/logo.jpg' alt='logo del equipo' id='Logo'> </li>
+		<li> <a id='nav_principal' class='navegador' > Principal </a> </li>
+		<li> <a id='nav_verRec' class='navegador' > Ver Reclamos </a> </li>
+		<li> <a id ='nav_estadisticas' class='navegador' > Estadísticas </a> </li>
+		<li> <a id='nav_agEmp' class='navegador' > Agregar Empresa </a> </li>
+		<li> <input type='text' placeholder='Buscador..' id='Buscador' class='Explorador' maxlength='30'> <img src='img/Lupa.jpg' alt='Lupa' id='Lupa' class='Explorador'> </li>
+	</ul>
+	</nav>
+ </div>
+</header>
+ <div class='Gestion_rec'>
+	<h2> <b> Sitio para la gestión de reclamos </b> </h2>
+	<h3> <b> Este sitio permite ingresar reclamos o quejas y realizar diversas consultas </b> </h3>
+	<p> Sitio desarrollado en el curso de Programación 1 - 1er Semestre 2023 - Universidad ORT Uruguay por: </p>
+	<p> <a href='img/foto.jpg' target='_blank'> <img src='img/foto.jpg' alt='foto de perfil' id='Foto'> </a> Mauro Santiago García Rodriguez, 307824 </p>
+	<button id='Bttn_agregar_rec'> Agrega tu reclamo aqui </button>
+ </div>
+ <div id='Agregar_rec'>
+  <div class='Gestion_rec'>
+	<h2> <b> Sitio para la gestión de reclamos </b> </h2>
+	</div>
+	<h2> Agregar reclamo </h2>
+	<table>
+		<tr>
+			<td> Nombre: </td>
+			<td> <input type='text' placeholder='Tu nombre...' maxlength='30' id='rec_nombre'> </td>
+		</tr>
+		<tr>
+			<td> Empresa: </td>
+			<td> <select class='select' name='select' id='rec_empresa'>
+				</select> </td>
+		</tr>
+		<tr>
+			<td> Reclamo: </td>
+			<td> <input type='text' placeholder='El titulo es...' maxlength='30' id='rec_titulo'> </td>
+		</tr>
+	</table>
+	<textarea placeholder='y tu reclamo es...' name='Reclamo_text' cols='60' rows='10' maxlength='30' id='rec_texto'></textarea>
+	<p> <button id='Bttn_agregar'>Agregar</button> <button id='Bttn_volver'>Volver</button> </p>
+	</div>
+ <div id='rec_ingres' class='ventana'>
+	<div id='Reclamo_2'>
+		<h2> Reclamos ingresados (los mas recientes primero)</h2>
+		<h3 id='sinDatos'> Sin datos </h3>
+		<div id='Reclamo_all_info'>
+
+		</div>
+	</div>
+</div>
+<div id='Estadísticas' class='ventana'>
+	<h2> Estadísticas </h2>
+	<h3> Empresas seleccionadas </h3>
+	<div id='Filtro'>
+		<table id='Botones_AT'>
+		
+		</table>
+	</div>
+	<div id='Orden'>
+		<input type='radio' name='Creciente' value='Creciente' id='Creciente' checked>
+		<label for='Creciente'>Orden nombre creciente</label>
+		<input type='radio' name='Decreciente' value='Decreciente' id='Decreciente'>	
+		<label for='Creciente'>Orden nombre decreciente</label>
+
+	<p> Empresas que empiezan con T </p>
+	</div>
+	<table id='Estadistic'>
+		<tr>
+			<th id='Nombre'>Nombre</th>
+			<th id='Direccion'>Direccion</th>
+			<th id='Rubro'>Rubro</th>
+			<th id='Cantidad'>Cantidad</th>
+		</tr>
+	</table>
+	<h3>Información General</h3>
+	<p>El promedio de las cantidades considerando todos los reclamos de todas las empresas es: 4 </p>
+	<p>Total de empresas registradas: 2 </p>
+	<h3>Empresas sin Reclamos</h3>
+	<ul>
+		<li>Alfa (18 de Julio 12345) Rubro: Muebles </li>
+	</ul>
+	<h3>Rubros con máxima cantidad</h3>
+	<ul>
+		<li>Viajes: cantidad 4 </li>
+	</ul>
+</div>
+<div id='agregar_emp' class='ventana'>
+	<h2>Agregar Empresa</h2>
+	<h3>Datos:</h3>
+	<table>
+		<tr>
+			<td> Nombre </td>
+			<td> <input type='text' maxlength='30' id='emp_nombre'> </td>
+		</tr>
+		<tr>
+			<td> Dirección </td>
+			<td> <input type='text' maxlength='30' id='emp_direccion'> </td>
+		</tr>
+		<tr>
+			<td> Rubro </td>
+			<td> <select class='select2' name='select' id='emp_rubro'>
+				<option value='Viajes'>Viajes</option>
+				<option value='Restaurantes'>Restaurantes</option>
+				<option value='Bancos'>Bancos</option>
+				<option value='Muebles'>Muebles</option>
+				<option value='Autos'>Autos</option>
+				<option value='Servicios'>Servicios</option>
+				<option value='General'>General</option>
+				</select> </td>
+		</tr>
+	</table>
+	<button id='Bttn_agregar_emp'>Agregar</button>
+</div>
+<script src='js/funciones.js'></script>
+<script src='js/clases.js'></script>
+</body>
+</html>	

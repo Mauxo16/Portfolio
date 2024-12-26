@@ -1,0 +1,191 @@
+/* Autor: Mauro Santiago García Rodriguez, 307824 */
+
+#Logo {
+ width:200px; height:100px;
+}
+#Lupa {
+  width:30px; height:25px;
+  cursor: pointer;
+}
+
+#Foto {
+	width:30px; height: 35px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+  background-color: yellow;
+  font-family: Arial
+}
+nav {
+  background-color: yellow;
+  margin: 0;
+  text-decoration: underline;
+  
+}
+nav ul {
+  margin: 0;
+  padding: 0px;
+  display: flex;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  color: green;
+  background-color: yellow;
+  display: block;
+  line-height: 4em;
+  padding: 1em 3em;
+}
+nav ul li:first-child {
+  margin-right: 30px;
+}
+
+
+nav ul li:last-child {
+	margin-left: 30px;
+}
+
+#Lupa {
+	margin: 40px 0px -7px 7px;
+	border-style: solid;
+	border-color: black;
+}
+.Gestion_rec {
+	background-color:coral;
+	display: block;
+	overflow: visible;
+	
+
+}
+
+
+
+.filtroBttn {
+	background-color: white;
+}
+
+
+#Agregar_rec {
+	background-color: rgb(150, 40, 56);
+	display: none;
+	overflow: hidden;
+
+}
+
+.navegador:hover {
+	cursor: pointer;
+}
+
+#rec_ingres {
+	background-color: orange;
+	display: none;
+	overflow: hidden;
+}
+
+#Estadísticas {
+	background-color: grey;
+	display: none;
+	overflow: hidden;
+
+}
+
+#agregar_emp {
+	background-color: rgb(50, 200, 76);
+	display: none;
+	overflow: hidden;
+}
+
+#Bttn_agregar_rec {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	padding: 10px 10px;
+	border-radius: 20px;
+	font-size: 40px;
+	background-image: linear-gradient(yellow, coral);
+}
+
+.Reclamo_box {
+	background-color:white;
+	padding: 10px 10px 10px 400px;
+	border-radius: 20px;
+	margin: 50px 50px 50px 50px;
+	border-width: thick;
+	border-style: solid;
+}
+
+div#Agregar_rec p {
+margin: 0px 0px 0px 0px;
+}
+
+table#Estadistic,#Estadistic th,#Estadistic td {
+  border: 1px solid;
+  background-color: white;
+  margin: auto;
+  text-align: center;
+ 	margin-left: auto;
+	margin-right: auto;
+}
+
+#Orden {
+text-align: center;
+margin: 50px 0px 0px 0px;
+}
+
+#Filtro {
+text-align: center;
+}
+
+#Nombre {
+	Padding: 0px 150px;
+}
+
+#Direccion {
+	Padding: 0px 150px;
+}
+
+#Rubro {
+	Padding: 0px 100px;
+}
+
+#Cantidad {
+	Padding: 0px 150px;
+}
+
+div#Agregar_emp p {
+margin: 0px 0px 0px 0px;
+}
+
+div#Agregar_rec input, select, button, textarea {
+display: inline-block;
+margin: 0px 10px 0px 0px;
+}
+
+#Bttn_agregar_emp, #Bttn_agregar, textarea {
+	Margin: 0px 0px 0px 83px;
+}
+
+table tr input {
+	Padding:0px 100px 0px 0px;
+}
+
+table tr .select {
+	Padding:0px 155px 0px 0px;
+}
+
+table tr .select2 {
+	Padding:0px 190px 0px 0px;
+}
+
+div#Filtro table {
+	 margin-left: auto;
+	margin-right: auto;
+}
+
+#Letra_T {
+	background-color: RGB(0,200,0);
+}
