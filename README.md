@@ -1,1 +1,5 @@
-# This is a list of Proyect which i've been working
+# ES
+Aqui esta la lista de proyecto que trabajé utilizando Javascript
+
+# EN
+Here's the list of proyects that i've been working using Javascript
