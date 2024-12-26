@@ -1,1 +1,1 @@
-# This is a list of Proyect which i've been working
+# This is a list of Proyects which i've been working
